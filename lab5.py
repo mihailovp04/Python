@@ -51,6 +51,8 @@ def view_childless_employees():
         print("Файл данных не найден. Пожалуйста, сначала введите данные.")
     finally:
         print("Попытка чтения списка бездетных сотрудников завершена.")
+        print int("Введите число от 11-19")
+
 
 def main_menu():
     while True:
