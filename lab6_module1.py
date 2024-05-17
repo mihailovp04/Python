@@ -10,14 +10,12 @@ class Employee:
         self.__specialty = specialty
 
     def calculateAge(self):
-        """Рассчитать возраст сотрудника."""
         today = datetime.now()
         birthday_date = datetime.strptime(self.__birthday, "%d.%m.%Y")
         age = today.year - birthday_date.year - ((today.month, today.day) < (birthday_date.month, birthday_date.day))
         return age
 
     def _calculateSalary(self):
-        """Вычислить зарплату (метод для переопределения)."""
         pass
 
     @property

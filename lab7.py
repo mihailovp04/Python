@@ -37,15 +37,12 @@ import math
 def calculate_fall_time():
     try:
         height = float(input("Введите высоту падения в метрах: "))
-        if math.isnan(height):
-            print("Пожалуйста, введите числовое значение для высоты.")
-            return
     except ValueError:
         print("Ошибка ввода. Необходимо ввести числовое значение.")
         return
     
     g = 9.8
     time = math.sqrt(2 * height / g)
-    print(f"Время падения с высоты {height} метров составляет {time:.2f} секунд.")
+    print(f"Время падения с высоты {height} метров составляет {time} секунд.")
 
 calculate_fall_time()

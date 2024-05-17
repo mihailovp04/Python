@@ -20,7 +20,7 @@ class Employee:
             return None
 
     def calculate_salary(self):
-        pass  # This method will be overridden by subclasses
+        pass  
 
     def set_name(self, value):
         if re.match(r'^[A-Za-zА-яёЁ]+$', value):
